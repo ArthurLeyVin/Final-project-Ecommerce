@@ -1,10 +1,11 @@
 {
-  "name": "final-project-cli",
+  "name": "tailwindcss-day1",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "dev": "next dev" 
-},
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
 
   "author": "",
   "license": "ISC",

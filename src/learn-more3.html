@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AutoFlux</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="shortcut icon" href="./image/Logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="output.css" />
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-        }
-        body.dark {
-            background-color: #1a202c;
-        }
-
-        .hero-background {
-            background-image: url("./image/big02.webp");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .text-shadow-strong {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
+      body {
+        font-family: "Inter", sans-serif;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      }
+      body.dark {
+        background-color: #1a202c;
+      }
+      .text-shadow-strong {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
     </style>
-</head>
-<body class="overflow-x-hidden overflow-y-auto">
-
-    <header class="bg-gray-800 text-white p-4 shadow-md dark:bg-gray-900">
+  </head>
+  <body class="overflow-x-hidden overflow-y-auto">
+    <header class="bg-gray-800 text-white p-4 shadow-md dark:bg-gray-900 sticky top-0 z-50">
       <div class="container mx-auto flex justify-between items-center px-4 md:px-0">
         <div class="flex items-center">
           <img src="./image/Logo.png" alt="AutoFlux Logo" class="h-16 w-16 md:h-20 md:w-20 rounded-full mr-2" />
@@ -79,145 +76,381 @@
     </header>
 
     <main class="container mx-auto p-4 md:p-8">
+      <section class="mb-12">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-8 mt-8 text-indigo-700 dark:text-indigo-400"
+          data-aos="fade-up"
+        >
+          Top Categories
+        </h2>
 
-        <section class="mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 mt-8 text-indigo-700 dark:text-indigo-400" data-aos="fade-up">Top Categories</h2>
-            
-            <div class="flex flex-wrap justify-center gap-4 mb-8" data-aos="fade-up" data-aos-delay="100">
-                <button class="px-6 py-2 rounded-full bg-pink-500 text-white hover:bg-pink-700 transition duration-300 dark:bg-pink-600 dark:hover:bg-pink-700" ><i class="fas fa-arrow-left mr-2"></i><a href="./Home-page.html">Back</a></button>
-                <button class="px-6 py-2 rounded-full border border-bg-pink-600 text-pink-700 hover:bg-pink-500 hover:text-white transition duration-300 dark:border-pink-500 dark:text-indigo-400 dark:hover:bg-pink-600">In stock</button>
-                <button class="px-6 py-2 rounded-full border border-bg-pink-600 text-pink-700 hover:bg-pink-500 hover:text-white transition duration-300 dark:border-pink-500 dark:text-indigo-400 dark:hover:bg-pink-600">Used Cars</button>
-                <button class="px-6 py-2 rounded-full border border-bg-pink-600 text-pink-700 hover:bg-pink-500 hover:text-white transition duration-300 dark:border-pink-500 dark:text-indigo-400 dark:hover:bg-pink-600">Any Models</button>
-                <button class="px-6 py-2 rounded-full border border-bg-pink-600 text-pink-700 hover:bg-pink-500 hover:text-white transition duration-300 dark:border-pink-500 dark:text-indigo-400 dark:hover:bg-pink-600">Any Motors</button>
-                <button class="px-6 py-2 rounded-full bg-pink-600 text-white hover:bg-pink-600 transition duration-300 dark:bg-pink-600 dark:hover:bg-pink-700">All Prices</button>
+        <div
+          class="flex flex-wrap justify-center gap-4 mb-8"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <button
+            class="px-6 py-2 rounded-full bg-pink-500 text-white hover:bg-pink-700 transition duration-300 dark:bg-pink-600 dark:hover:bg-pink-700"
+          >
+            <i class="fas fa-arrow-left mr-2"></i
+            ><a href="./Home-page.html">Back</a>
+          </button>
+          <button
+            class="px-6 py-2 rounded-full border border-bg-pink-600 text-pink-700 hover:bg-pink-500 hover:text-white transition duration-300 dark:border-pink-500 dark:text-indigo-400 dark:hover:bg-pink-600"
+          >
+            In stock
+          </button>
+          <button
+            class="px-6 py-2 rounded-full border border-bg-pink-600 text-pink-700 hover:bg-pink-500 hover:text-white transition duration-300 dark:border-pink-500 dark:text-indigo-400 dark:hover:bg-pink-600"
+          >
+            Used Cars
+          </button>
+          <button
+            class="px-6 py-2 rounded-full border border-bg-pink-600 text-pink-700 hover:bg-pink-500 hover:text-white transition duration-300 dark:border-pink-500 dark:text-indigo-400 dark:hover:bg-pink-600"
+          >
+            Any Models
+          </button>
+          <button
+            class="px-6 py-2 rounded-full border border-bg-pink-600 text-pink-700 hover:bg-pink-500 hover:text-white transition duration-300 dark:border-pink-500 dark:text-indigo-400 dark:hover:bg-pink-600"
+          >
+            Any Motors
+          </button>
+          <button
+            class="px-6 py-2 rounded-full bg-pink-600 text-white hover:bg-pink-600 transition duration-300 dark:bg-pink-600 dark:hover:bg-pink-700"
+          >
+            All Prices
+          </button>
+        </div>
+
+        <div
+          class="bg-gray-200 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg p-4 md:p-6 mb-8"
+          data-aos="fade-right"
+        >
+          <div class="flex flex-col lg:flex-row items-center gap-6">
+            <div class="lg:w-1/2">
+              <img
+                src="./image/image-Mercedes/1.jpg"
+                alt="Rolls Royce Wraith"
+                class="rounded-lg shadow-md w-full h-auto object-cover"
+              />
             </div>
-
-            <div class="bg-gray-200 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg p-4 md:p-6 mb-8" data-aos="fade-right">
-                <div class="flex flex-col lg:flex-row items-center gap-6">
-                    <div class="lg:w-1/2">
-                        <img src="./image/big-01.jpg" alt="Rolls Royce Wraith" class="rounded-lg shadow-md w-full h-auto object-cover">
-                    </div>
-                    <div class="lg:w-1/2 text-center lg:text-left">
-                        <h3 class="text-3xl md:text-4xl font-bold text-indigo-800 dark:text-indigo-300 mb-2">Mercedes-AMG GLE 63 S Coupe</h3>
-                        <p class="text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">Mercedes-AMG GLE 63 S Coupe</p>
-                        <p class="text-gray-600 dark:text-gray-400 text-base">A masterpiece of automotive engineering and luxury. Experience unparalleled comfort and performance.</p>
-                    </div>
-                </div>
+            <div class="lg:w-1/2 text-center lg:text-left">
+              <h3
+                class="text-3xl md:text-4xl font-bold text-indigo-800 dark:text-indigo-300 mb-2"
+              >
+                Mercedes-AMG GLE 63 S Coupe
+              </h3>
+              <p
+                class="text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4"
+              >
+                Mercedes-AMG GLE 63 S Coupe
+              </p>
+              <p class="text-gray-600 dark:text-gray-400 text-base">
+                A masterpiece of automotive engineering and luxury. Experience
+                unparalleled comfort and performance.
+              </p>
             </div>
+          </div>
+        </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-gray-200 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-4" data-aos="fade-up" data-aos-delay="200">
-                    <img src="./image/photo_2025-06-17_09-57-26.jpg" alt="Car" class="w-full h-40 object-cover rounded-md mb-4">
-                    <h4 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-1">Mercedes-AMG ONE </h4>
-                    <p class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">$2.7M</p>
-                    <span class="text-sm text-gray-600 dark:text-gray-400">578,000 km</span>
-                </div>
-                <div class="bg-gray-200 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-4" data-aos="fade-up" data-aos-delay="300">
-                    <img src="./image/photo_2025-06-17_10-11-03.jpg" alt="Car" class="w-full h-40 object-cover rounded-md mb-4">
-                    <h4 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-1">Mercedes-Benz AMG GT</h4>
-                    <p class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">$111,950</p>
-                    <span class="text-sm text-gray-600 dark:text-gray-400">Lotos peum</span>
-                </div>
-                <div class="bg-gray-200 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-4" data-aos="fade-up" data-aos-delay="400">
-                    <img src="./image/photo_2025-06-17_09-56-18.jpg" alt="Car" class="w-full h-40 object-cover rounded-md mb-4">
-                    <h4 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-1">Mercedes-Benz G-Class</h4>
-                    <p class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">$162,650</p>
-                    <span class="text-sm text-gray-600 dark:text-gray-400">Excellent Condition</span>
-                </div>
-                <div class="bg-gray-200 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-4" data-aos="fade-up" data-aos-delay="500">
-                    <img src="./image/photo_2025-06-17_09-52-42.jpg" alt="Car" class="w-full h-40 object-cover rounded-md mb-4">
-                    <h4 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-1">Shelby Mustang GT500</h4>
-                    <p class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">$127,895</p>
-                    <span class="text-sm text-gray-600 dark:text-gray-400">Vintage Collection</span>
-                </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-gray-200 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="./image/photo_2025-06-17_09-57-26.jpg"
+              alt="Car"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h4
+              class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-1"
+            >
+              Mercedes-AMG ONE
+            </h4>
+            <p class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">
+              $2.7M
+            </p>
+            <span class="text-sm text-gray-600 dark:text-gray-400"
+              >578,000 km</span
+            >
+          </div>
+          <div
+            class="bg-gray-200 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img
+              src="./image/photo_2025-06-17_10-11-03.jpg"
+              alt="Car"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h4
+              class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-1"
+            >
+              Mercedes-Benz AMG GT
+            </h4>
+            <p class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">
+              $111,950
+            </p>
+            <span class="text-sm text-gray-600 dark:text-gray-400"
+              >Lotos peum</span
+            >
+          </div>
+          <div
+            class="bg-gray-200 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img
+              src="./image/photo_2025-06-17_09-56-18.jpg"
+              alt="Car"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h4
+              class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-1"
+            >
+              Mercedes-Benz G-Class
+            </h4>
+            <p class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">
+              $162,650
+            </p>
+            <span class="text-sm text-gray-600 dark:text-gray-400"
+              >Excellent Condition</span
+            >
+          </div>
+          <div
+            class="bg-gray-200 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <img
+              src="./image/photo_2025-06-17_09-52-42.jpg"
+              alt="Car"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h4
+              class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-1"
+            >
+              Shelby Mustang GT500
+            </h4>
+            <p class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">
+              $127,895
+            </p>
+            <span class="text-sm text-gray-600 dark:text-gray-400"
+              >Vintage Collection</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-8 mt-8 text-indigo-700 dark:text-indigo-400"
+          data-aos="fade-up"
+        >
+          Our Services
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-1 gap-8">
+          <div
+            class="bg-pink-600 text-white rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6"
+            data-aos="fade-right"
+          >
+            <div class="md:w-1/2">
+              <h3 class="text-2xl font-bold mb-3">All Brands</h3>
+              <p class="text-base leading-relaxed mb-4">
+                A visual representation of our 'All Brands' service, inviting
+                users to explore car-related solutions.
+              </p>
+              <button
+                class="bg-white text-indigo-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition duration-300"
+              >
+                Get Start
+              </button>
             </div>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 mt-8 text-indigo-700 dark:text-indigo-400" data-aos="fade-up">Our Services</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-1 gap-8">
-                <div class="bg-pink-600 text-white rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6" data-aos="fade-right">
-                    <div class="md:w-1/2">
-                        <h3 class="text-2xl font-bold mb-3">All Brands</h3>
-                        <p class="text-base leading-relaxed mb-4">A visual representation of our 'All Brands' service, inviting users to explore car-related solutions.</p>
-                        <button class="bg-white text-indigo-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition duration-300">Get Start</button>
-                    </div>
-                    <div class="md:w-1/2">
-                        <img src="./image/pic1.jpg" alt="Car Interior" class="rounded-lg shadow-md w-full h-auto object-cover">
-                    </div>
-                </div>
-
-                <div class="bg-gray-200 dark:bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6" data-aos="fade-left">
-                    <div class="md:w-1/2 order-2 md:order-1">
-                        <img src="./image/pic2.jpg" alt="Support" class="rounded-lg shadow-md w-full h-auto object-cover">
-                    </div>
-                    <div class="md:w-1/2 order-1 md:order-2 text-gray-900 dark:text-gray-100">
-                        <h3 class="text-2xl font-bold text-indigo-700 dark:text-indigo-300 mb-3">Free Support</h3>
-                        <p class="text-base leading-relaxed mb-4">A design section showcasing 'Free Support' services, with a close-up of a high-end car's steering wheel and dashboard.</p>
-                        <button class="bg-pink-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-pink-800 transition duration-300 dark:bg-pink-600 dark:hover:bg-pink-700">Get Start</button>
-                    </div>
-                </div>
+            <div class="md:w-1/2">
+              <img
+                src="./image/service.jpg"
+                alt="Car Interior"
+                class="rounded-lg shadow-md w-full h-auto object-cover"
+              />
             </div>
-        </section>
+          </div>
 
-        <section class="mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 mt-8 text-indigo-700 dark:text-indigo-400" data-aos="fade-up">Auto Loan Calculator</h2>
-            <div class="bg-gray-200 dark:bg-gray-800 rounded-xl shadow-lg p-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center" data-aos="zoom-in">
-                <div class="p-4">
-                    <div class="mb-4">
-                        <label for="loanAmount" class="block text-gray-700 dark:text-gray-300 text-lg font-medium mb-2">Loan Amount ($)</label>
-                        <input type="range" id="loanAmount" min="1000" max="100000" value="1000" class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-700" oninput="this.nextElementSibling.value=this.value">
-                        <output class="block text-gray-700 dark:text-gray-300 mt-2">$ 1,000</output>
-                    </div>
-                    <div class="mb-4">
-                        <label for="downPayment" class="block text-gray-700 dark:text-gray-300 text-lg font-medium mb-2">Down Payment ($)</label>
-                        <input type="range" id="downPayment" min="0" max="20000" value="2000" class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-700" oninput="this.nextElementSibling.value=this.value">
-                        <output class="block text-gray-700 dark:text-gray-300 mt-2">$ 2,000</output>
-                    </div>
-                    <div class="mb-4">
-                        <label for="loanTerm" class="block text-gray-700 dark:text-gray-300 text-lg font-medium mb-2">Loan Term (Years)</label>
-                        <input type="range" id="loanTerm" min="1" max="7" value="3" class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-700" oninput="this.nextElementSibling.value=this.value">
-                        <output class="block text-gray-700 dark:text-gray-300 mt-2">3 Years</output>
-                    </div>
-                    <button class="bg-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-pink-700 transition duration-300 w-full mt-4">Calculate Loan</button>
-                </div>
-                <div class="p-4">
-                    <img src="./image/person.jpg" alt="Man calculating loan" class="rounded-lg shadow-md w-full h-auto object-cover">
-                </div>
+          <div
+            class="bg-gray-200 dark:bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6"
+            data-aos="fade-left"
+          >
+            <div class="md:w-1/2 order-2 md:order-1">
+              <img
+                src="./image/service1.jpg"
+                alt="Support"
+                class="rounded-lg shadow-md w-full h-auto object-cover"
+              />
             </div>
-        </section>
+            <div
+              class="md:w-1/2 order-1 md:order-2 text-gray-900 dark:text-gray-100"
+            >
+              <h3
+                class="text-2xl font-bold text-indigo-700 dark:text-indigo-300 mb-3"
+              >
+                Free Support
+              </h3>
+              <p class="text-base leading-relaxed mb-4">
+                A design section showcasing 'Free Support' services, with a
+                close-up of a high-end car's steering wheel and dashboard.
+              </p>
+              <button
+                class="bg-pink-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-pink-800 transition duration-300 dark:bg-pink-600 dark:hover:bg-pink-700"
+              >
+                Get Start
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="mb-12">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-8 mt-8 text-indigo-700 dark:text-indigo-400"
+          data-aos="fade-up"
+        >
+          Auto Loan Calculator
+        </h2>
+        <div
+          class="bg-gray-200 dark:bg-gray-800 rounded-xl shadow-lg p-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"
+          data-aos="zoom-in"
+        >
+          <div class="p-4">
+            <div class="mb-4">
+              <label
+                for="loanAmount"
+                class="block text-gray-700 dark:text-gray-300 text-lg font-medium mb-2"
+                >Loan Amount ($)</label
+              >
+              <input
+                type="range"
+                id="loanAmount"
+                min="1000"
+                max="100000"
+                value="1000"
+                class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-700"
+                oninput="this.nextElementSibling.value=this.value"
+              />
+              <output class="block text-gray-700 dark:text-gray-300 mt-2"
+                >$ 1,000</output
+              >
+            </div>
+            <div class="mb-4">
+              <label
+                for="downPayment"
+                class="block text-gray-700 dark:text-gray-300 text-lg font-medium mb-2"
+                >Down Payment ($)</label
+              >
+              <input
+                type="range"
+                id="downPayment"
+                min="0"
+                max="20000"
+                value="2000"
+                class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-700"
+                oninput="this.nextElementSibling.value=this.value"
+              />
+              <output class="block text-gray-700 dark:text-gray-300 mt-2"
+                >$ 2,000</output
+              >
+            </div>
+            <div class="mb-4">
+              <label
+                for="loanTerm"
+                class="block text-gray-700 dark:text-gray-300 text-lg font-medium mb-2"
+                >Loan Term (Years)</label
+              >
+              <input
+                type="range"
+                id="loanTerm"
+                min="1"
+                max="7"
+                value="3"
+                class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer range-lg dark:bg-gray-700"
+                oninput="this.nextElementSibling.value=this.value"
+              />
+              <output class="block text-gray-700 dark:text-gray-300 mt-2"
+                >3 Years</output
+              >
+            </div>
+            <button
+              class="bg-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-pink-700 transition duration-300 w-full mt-4"
+            >
+              Calculate Loan
+            </button>
+          </div>
+          <div class="p-4">
+            <img
+              src="./image/p1.jpg"
+              alt="Man calculating loan"
+              class="rounded-lg shadow-md w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-gray-800 text-white py-12 dark:bg-gray-950">
       <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div class="text-center md:text-left">
-          <div class="flex flex-cols items-center justify-center sm:flex-row sm:justify-start md:flex-col lg:flex-row lg:justify-start mb-4">
-            <img src="./image/Logo.png" alt="AutoFlux Logo" class="h-36 w-36 rounded-full mr-2" />
+          <div
+            class="flex flex-cols items-center justify-center sm:flex-row sm:justify-start md:flex-col lg:flex-row lg:justify-start mb-4"
+          >
+            <img
+              src="./image/Logo.png"
+              alt="AutoFlux Logo"
+              class="h-36 w-36 rounded-full mr-2"
+            />
             <span class="text-md font-bold">AUTOFLUX</span>
           </div>
           <p class="text-gray-400 text-sm break-words">
-            Your premier destination for buying and selling cars online. Connecting you with your dream car.
+            Your premier destination for buying and selling cars online.
+            Connecting you with your dream car.
           </p>
         </div>
 
         <div class="text-center md:text-left">
           <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
           <ul class="space-y-2 text-gray-400 text-sm">
-            <li><a href="./Home-page.html" class="hover:text-gray-300">Home</a></li>
-            <li><a href="#" class="hover:text-gray-300">Shop</a></li>
-            <li><a href="#" class="hover:text-gray-300">About</a></li>
-            <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+            <li>
+              <a href="./Home-page.html" class="hover:text-gray-300">Home</a>
+            </li>
+            <li><a href="./shop.html" class="hover:text-gray-300">Shop</a></li>
+            <li>
+              <a href="./about-us.html" class="hover:text-gray-300">About</a>
+            </li>
+            <li>
+              <a href="./contact-us.html" class="hover:text-gray-300"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
 
         <div class="text-center md:text-left">
           <h4 class="font-semibold text-lg text-white mb-4">Our Brand</h4>
           <ul class="space-y-2 text-gray-400 text-sm">
-            <li><a href="./detail-BMW.html" class="hover:text-gray-300">BMW M</a></li>
-            <li><a href="./detail-Jeep.html" class="hover:text-gray-300">Jeep</a></li>
-            <li><a href="./detail-Mezerdes.html" class="hover:text-gray-300">Mercedes-AMG</a></li>
-            <li><a href="./detail-Ford.html" class="hover:text-gray-300">Ford</a></li>
+            <li>
+              <a href="./detail-BMW.html" class="hover:text-gray-300">BMW M</a>
+            </li>
+            <li>
+              <a href="./detail-Jeep.html" class="hover:text-gray-300">Jeep</a>
+            </li>
+            <li>
+              <a href="./detail-Mezerdes.html" class="hover:text-gray-300"
+                >Mercedes-AMG</a
+              >
+            </li>
+            <li>
+              <a href="./detail-Ford.html" class="hover:text-gray-300">Ford</a>
+            </li>
           </ul>
         </div>
 
@@ -226,12 +459,17 @@
           <ul class="space-y-2 text-gray-400 text-sm">
             <li><i class="fas fa-envelope mr-1"></i>AutoFlux@gmail.com</li>
             <li><i class="fas fa-phone mr-1"></i> +855 815 287 14</li>
-            <li><i class="fas fa-map-marker-alt mr-1"></i> AutoFlux.com</li>
+            <li>
+              <i class="fas fa-map-marker-alt mr-1"></i>#24, St.562,Sangkat
+              Boeng kak I, Khan Toul Kork, Phonm Penh
+            </li>
           </ul>
         </div>
       </div>
 
-      <div class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+      <div
+        class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm"
+      >
         Copyright 2015 All Right Reserved. Made in Logger.
       </div>
     </footer>
@@ -244,7 +482,10 @@
       const themeIcon = document.getElementById("theme-icon");
       const mobileThemeIcon = document.getElementById("mobile-theme-icon");
 
-      let isDark = localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: dark)").matches);
+      let isDark =
+        localStorage.getItem("theme") === "dark" ||
+        (!localStorage.getItem("theme") &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches);
 
       function setTheme(dark) {
         if (dark) {
@@ -278,51 +519,62 @@
       // Initialize AOS
       AOS.init({
         duration: 800, // global duration for animations
-        once: true,    // whether animation should happen only once - default
+        once: true, // whether animation should happen only once - default
         mirror: false, // whether elements should animate out while scrolling past them
       });
 
       // Your custom Intersection Observer for .fade-in-section (if still desired)
       // Note: If AOS covers all your needs, you might remove this.
       const fadeInSections = document.querySelectorAll(".fade-in-section");
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1 });
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
 
       fadeInSections.forEach((section) => observer.observe(section));
 
       // Loan Calculator Logic (add this if you want the output to update dynamically)
-      document.addEventListener('DOMContentLoaded', () => {
-        const loanAmount = document.getElementById('loanAmount');
-        const downPayment = document.getElementById('downPayment');
-        const loanTerm = document.getElementById('loanTerm');
+      document.addEventListener("DOMContentLoaded", () => {
+        const loanAmount = document.getElementById("loanAmount");
+        const downPayment = document.getElementById("downPayment");
+        const loanTerm = document.getElementById("loanTerm");
 
         const loanAmountOutput = loanAmount.nextElementSibling;
         const downPaymentOutput = downPayment.nextElementSibling;
         const loanTermOutput = loanTerm.nextElementSibling;
 
-        loanAmount.addEventListener('input', () => {
-          loanAmountOutput.value = `$ ${parseInt(loanAmount.value).toLocaleString()}`;
+        loanAmount.addEventListener("input", () => {
+          loanAmountOutput.value = `$ ${parseInt(
+            loanAmount.value
+          ).toLocaleString()}`;
         });
 
-        downPayment.addEventListener('input', () => {
-          downPaymentOutput.value = `$ ${parseInt(downPayment.value).toLocaleString()}`;
+        downPayment.addEventListener("input", () => {
+          downPaymentOutput.value = `$ ${parseInt(
+            downPayment.value
+          ).toLocaleString()}`;
         });
 
-        loanTerm.addEventListener('input', () => {
+        loanTerm.addEventListener("input", () => {
           loanTermOutput.value = `${loanTerm.value} Years`;
         });
 
         // Initialize outputs on load
-        loanAmountOutput.value = `$ ${parseInt(loanAmount.value).toLocaleString()}`;
-        downPaymentOutput.value = `$ ${parseInt(downPayment.value).toLocaleString()}`;
+        loanAmountOutput.value = `$ ${parseInt(
+          loanAmount.value
+        ).toLocaleString()}`;
+        downPaymentOutput.value = `$ ${parseInt(
+          downPayment.value
+        ).toLocaleString()}`;
         loanTermOutput.value = `${loanTerm.value} Years`;
       });
     </script>
-</body>
+  </body>
 </html>

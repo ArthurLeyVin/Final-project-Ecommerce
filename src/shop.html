@@ -5,18 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AutoFlux</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script>
-      tailwind.config = {
-        darkMode: "class", // Enable dark mode based on the 'dark' class on the body
-        theme: {
-          extend: {
-            colors: {
-              // Define custom dark mode colors if needed
-            },
-          },
-        },
-      };
-    </script>
     <!-- Inter Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
@@ -109,7 +97,7 @@
             alt="AutoFlux Logo"
             class="h-16 w-16 md:h-20 md:w-20 rounded-full mr-2"
           />
-          <!-- <span class="text-md font-bold">AUTOFLUX</span> -->
+          <span class="text-md font-bold">AUTOFLUX</span>
         </div>
 
         <nav class="hidden md:flex space-x-6">
@@ -127,7 +115,7 @@
             <i id="theme-icon" class="fa-solid fa-moon"></i>
           </button>
           <a
-            href="login.html"
+            href="./profile.html"
             class="text-white hover:text-gray-300 cursor-pointer"
           >
             <i class="fas fa-user-circle text-2xl md:text-3xl"></i>
@@ -173,7 +161,7 @@
             >Contact</a
           >
           <a
-            href="login.html"
+            href="./profile.html"
             class="hover:text-gray-300 w-full text-center py-2"
           >
             <i class="fas fa-user-circle text-2xl pt-4"></i> Profile
@@ -184,16 +172,145 @@
 
     <!-- Hero Section -->
     <section
-      class="hero-background bg-[url('/image/image-Mercedes/Mercdes.jpg')] text-white py-20 px-4 md:py-32 rounded-b-xl shadow-lg flex items-center justify-center text-center"
+      id="hero-slider"
+      class="relative flex overflow-x-scroll snap-x snap-mandatory h-screen"
+      style="scroll-behavior: smooth"
     >
-      <div class="max-w-4xl mx-auto">
-        <h1 class="text-3xl md:text-5xl font-bold mb-4">Find Your Dream Car</h1>
-        <p class="text-xl md:text-3xl font-semibold mb-8">$62,230</p>
-        <button
-          class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105"
-        >
-          Browse All Cars
-        </button>
+      <!-- Left Navigation Button -->
+      <button
+        id="prev-slide"
+        class="absolute left-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full shadow-lg z-10 hover:bg-opacity-75 transition-all duration-300 focus:outline-none"
+        aria-label="Previous slide"
+      >
+        <!-- <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="2.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M15.75 19.5L8.25 12l7.5-7.5"
+      />
+    </svg> -->
+      </button>
+
+      <!-- Right Navigation Button -->
+      <button
+        id="next-slide"
+        class="absolute right-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full shadow-lg z-10 hover:bg-opacity-75 transition-all duration-300 focus:outline-none"
+        aria-label="Next slide"
+      >
+        <!-- <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="2.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+      />
+    </svg> -->
+      </button>
+
+      <!-- Slide 1: Mercedes (now uses BMW/1.jpg as per your request) -->
+      <div
+        class="flex-shrink-0 w-screen flex items-center justify-center text-center text-white py-20 px-4 md:py-32 rounded-b-xl shadow-lg snap-start"
+        data-aos="fade-right"
+        style="
+          background-image: url('./image/images-BMW/new.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="max-w-4xl mx-auto">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4">
+            Unleash Power: Ford Mustang
+          </h1>
+          <p class="text-xl md:text-3xl font-semibold mb-8">$62,230</p>
+          <button
+            class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105"
+          >
+            Browse Mercedes
+          </button>
+        </div>
+      </div>
+
+      <!-- Slide 2: Ford Mustang (now uses Jeep/1.jpg as per your request) -->
+      <div
+        class="flex-shrink-0 w-screen flex items-center justify-center text-center text-white py-20 px-4 md:py-32 rounded-b-xl shadow-lg snap-start"
+        style="
+          background-image: url('./image/images-Jeep/new.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="max-w-4xl mx-auto">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4">
+            Unleash Power: Jeep
+          </h1>
+          <p class="text-xl md:text-3xl font-semibold mb-8">$55,000</p>
+          <button
+            class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105"
+          >
+            Explore Mustangs
+          </button>
+        </div>
+      </div>
+
+      <!-- Slide 3: Example BMW (now uses Mercedes/benz.jpg as per your request) -->
+      <div
+        class="flex-shrink-0 w-screen flex items-center justify-center text-center text-white py-20 px-4 md:py-32 rounded-b-xl shadow-lg snap-start"
+        style="
+          background-image: url('./image/image-Mercedes/new.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="max-w-4xl mx-auto">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4">
+            Discover Luxury: Mercedes
+          </h1>
+          <p class="text-xl md:text-3xl font-semibold mb-8">$70,500</p>
+          <button
+            class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105"
+          >
+            View BMWs
+          </button>
+        </div>
+      </div>
+
+      <!-- Slide 4: New Car Example (now uses Mercedes/Mercdes.jpg as per your request) -->
+      <div
+        class="flex-shrink-0 w-screen flex items-center justify-center text-center text-white py-20 px-4 md:py-32 rounded-b-xl shadow-lg snap-start"
+        style="
+          background-image: url('./image/image-ford/new.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="max-w-4xl mx-auto">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4">
+            Future Rides: New Arrivals
+          </h1>
+          <p class="text-xl md:text-3xl font-semibold mb-8">$85,000</p>
+          <button
+            class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105"
+          >
+            Discover More
+          </button>
+        </div>
       </div>
     </section>
 
@@ -207,56 +324,59 @@
         </h2>
       </div>
       <section
-        class="flex justify-center p-4 bg-white rounded-xl shadow-md space-x-30 dark:bg-gray-700"
+        class="flex flex-nowrap justify-center md:gap-16 sm:gap-8 p-4 bg-white rounded-xl shadow-md dark:bg-gray-700 overflow-x-auto"
         data-aos="fade-down"
       >
         <div class="flex flex-col items-center p-4">
           <img
-            src="./image/BMW.svg"
+            src="./image/images-BMW/BMW -logo.svg"
             alt="BMW Logo"
-            class="h-12 w-12 object-contain"
+            class="h-16 w-16 object-contain"
           />
         </div>
 
         <div class="flex flex-col items-center p-4">
           <img
-            src="./image/Jeep_logo.svg"
+            src="./image/images-Jeep/Jeep_logo.svg"
             alt="Jeep Logo"
-            class="h-12 w-24 object-contain dark:hidden"
+            class="h-16 w-32 object-contain dark:hidden"
           />
           <img
-            src="./image/jeep-white.webp"
+            src="./image/images-Jeep/white-jeep.webp"
             alt="Jeep Logo White"
-            class="h-12 w-24 object-contain hidden dark:block"
+            class="h-16 w-32 object-contain hidden dark:block"
           />
         </div>
 
         <div class="flex flex-col items-center p-4">
           <img
-            src="./image/Mercedes-logo.png"
+            src="./image/image-Mercedes/Mercedes-Logo.png"
             alt="Mercedes Logo"
-            class="h-12 w-12 object-contain"
+            class="h-16 w-16 object-contain"
           />
         </div>
 
         <div class="flex flex-col items-center p-4">
           <img
-            src="./image/logo-ford.png"
+            src="./image/image-ford/logo-ford.png"
             alt="Ford Logo"
-            class="h-12 w-24 object-contain"
+            class="h-16 w-32 object-contain"
           />
         </div>
       </section>
 
       <!-- Explore All Vehicles Section -->
       <section class="my-12">
-        <h2
-          class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center md:text-left dark:text-white"
-        >
-          Explore All Vehicles
-        </h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="flex items-center justify-between">
+          <h2
+            class="text-2xl md:text-3xl font-bold text-gray-800 text-center md:text-left dark:text-white"
+          >
+            Explore All Vehicles
+          </h2>
+          <h3 class="dark:text-white">view all</h3>
+        </div>
+        <hr class="my-2 dark:text-white" />
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
           <!-- Car Card Example (repeated to fill the layout as per image) -->
           <!-- Card 1 -->
           <div
@@ -303,7 +423,7 @@
               <h2
                 class="text-xl font-semibold text-gray-900 mb-1 dark:text-white"
               >
-                This is the new 2025 Mercedes-Benz G-Class G 580e 4MATIC
+                This is the new 2025 Mercedes-Benz...
               </h2>
               <p class="text-sm text-gray-500 mb-4 dark:text-gray-300">
                 3.0L Twin-Turbo Inline-6
@@ -1639,7 +1759,7 @@
               <h2
                 class="text-xl font-semibold text-gray-900 mb-1 dark:text-white"
               >
-                This is the new  Black Heavily Modified Jeep Wrangler
+                This is the new Black Heavily Modified Jeep...
               </h2>
               <p class="text-sm text-gray-500 mb-4 dark:text-gray-300">
                 3.0L Twin-Turbo Inline-6
@@ -2742,8 +2862,8 @@
               <div
                 class="flex justify-between items-center pt-4 border-t border-gray-200 dark:border-gray-600"
               >
-                <span class="text-2xl font-bold text-gray-900 dark:text-white"
-                  > $81,200</span
+                <span class="text-2xl font-bold text-gray-900 dark:text-white">
+                  $81,200</span
                 >
                 <a
                   href="./detail-BMW.html"
@@ -2808,7 +2928,7 @@
               <h2
                 class="text-xl font-semibold text-gray-900 mb-1 dark:text-white"
               >
-                This is the new Mercedes-AMG GT 4-Door Coupé
+                This is the new Mercedes-AMG GT...
               </h2>
               <p class="text-sm text-gray-500 mb-4 dark:text-gray-300">
                 3.0L Twin-Turbo Inline-6
@@ -2934,12 +3054,16 @@
       </section>
       <!-- Specials Section -->
       <section class="my-12">
-        <h2
-          class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center md:text-left dark:text-white"
-        >
-          Specials
-        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="flex items-center justify-between">
+          <h2
+            class="text-2xl md:text-3xl font-bold text-gray-800 text-center md:text-left dark:text-white"
+          >
+            Specials
+          </h2>
+          <h3 class="dark:text-white">view all</h3>
+        </div>
+        <hr class="my-2 dark:text-white" />
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
           <div
             class="relative w-full max-w-sm bg-white rounded-xl shadow-lg overflow-hidden dark:bg-gray-700 object-cover cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out"
             data-aos="fade-up"
@@ -3627,7 +3751,7 @@
           >
         </div>
         <img
-          src="./image/card01.jpg"
+          src="./image/1.jpg"
           alt="Car Placeholder"
           class="rounded-lg shadow-md max-w-full h-auto"
         />
@@ -3697,7 +3821,10 @@
           <ul class="space-y-2 text-gray-400 text-sm">
             <li><i class="fas fa-envelope mr-1"></i>AutoFlux@gmail.com</li>
             <li><i class="fas fa-phone mr-1"></i> +855 81 528 714</li>
-            <li><i class="fas fa-map-marker-alt mr-1"></i> AutoFlux.com</li>
+            <li>
+              <i class="fas fa-map-marker-alt mr-1"></i>#24, St.562,Sangkat
+              Boeng kak I, Khan Toul Kork, Phonm Penh
+            </li>
           </ul>
         </div>
       </div>
@@ -3771,6 +3898,95 @@
       );
 
       fadeInSections.forEach((section) => observer.observe(section));
+      const slider = document.getElementById("hero-slider");
+      const prevButton = document.getElementById("prev-slide");
+      const nextButton = document.getElementById("next-slide");
+
+      // Get all slide elements (filter for direct children that are likely slides based on w-screen class)
+      const slides = Array.from(slider.children).filter((child) =>
+        child.classList.contains("w-screen")
+      );
+
+      // Initialize current slide index
+      let currentSlideIndex = 0;
+      let autoScrollInterval; // Variable to hold the interval ID
+
+      // Function to scroll to a specific slide (now always loops)
+      function scrollToSlide(index) {
+        if (slider && slides.length > 0) {
+          // Use modulo to ensure continuous looping for both manual and auto-scroll
+          currentSlideIndex = (index + slides.length) % slides.length;
+
+          const scrollLeft = slides[currentSlideIndex].offsetLeft;
+          slider.scrollTo({
+            left: scrollLeft,
+            behavior: "smooth", // Smooth scroll animation
+          });
+          // No need to update button visibility here, as they are always visible
+        }
+      }
+
+      // Function to start auto-scrolling
+      function startAutoScroll() {
+        // Clear any existing interval to prevent multiple intervals running
+        clearInterval(autoScrollInterval);
+        autoScrollInterval = setInterval(() => {
+          scrollToSlide(currentSlideIndex + 1); // Move to the next slide (loops automatically)
+        }, 5000); // Change slide every 5 seconds (5000 milliseconds)
+      }
+
+      // Function to stop auto-scrolling (e.g., when user interacts)
+      function stopAutoScroll() {
+        clearInterval(autoScrollInterval);
+      }
+
+      // Event listener for the "Next" button
+      nextButton.addEventListener("click", () => {
+        stopAutoScroll(); // Stop auto-scroll on manual interaction
+        scrollToSlide(currentSlideIndex + 1); // Move to next slide (loops)
+        startAutoScroll(); // Restart auto-scroll after interaction
+      });
+
+      // Event listener for the "Previous" button
+      prevButton.addEventListener("click", () => {
+        stopAutoScroll(); // Stop auto-scroll on manual interaction
+        scrollToSlide(currentSlideIndex - 1); // Move to previous slide (loops)
+        startAutoScroll(); // Restart auto-scroll after interaction
+      });
+
+      // Optional: Update currentSlideIndex based on manual scrolling (for auto-scroll synchronization)
+      slider.addEventListener("scroll", () => {
+        // Clear the auto-scroll interval when the user manually scrolls
+        stopAutoScroll();
+
+        // Debounce to avoid excessive calculations during continuous scrolling
+        clearTimeout(slider.scrollTimeout);
+        slider.scrollTimeout = setTimeout(() => {
+          if (slides.length > 0) {
+            const scrollLeft = slider.scrollLeft;
+            // Find the slide that is currently mostly in view
+            const viewportCenter = scrollLeft + slider.offsetWidth / 2;
+
+            const newIndex = slides.findIndex((slide) => {
+              const slideLeft = slide.offsetLeft;
+              const slideRight = slideLeft + slide.offsetWidth;
+              return viewportCenter >= slideLeft && viewportCenter < slideRight;
+            });
+
+            if (newIndex !== -1 && newIndex !== currentSlideIndex) {
+              currentSlideIndex = newIndex;
+            }
+          }
+          // Restart auto-scroll after the user finishes scrolling (after debounce)
+          startAutoScroll();
+        }, 500); // Adjust debounce time as needed (e.g., 500ms after last scroll event)
+      });
+
+      // Set the initial slide position and start auto-scrolling on load
+      window.addEventListener("load", () => {
+        scrollToSlide(0); // Ensure it starts at the first slide
+        startAutoScroll(); // Begin auto-scrolling
+      });
     </script>
   </body>
 </html>
