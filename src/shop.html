@@ -66,7 +66,7 @@
           #4f46e5,
           #7c3aed
         ); /* Slightly darker on hover */
-        transform: translateY(-2px);
+        transform: translateY(-1px);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       }
       /* Custom card shadow for consistency with the new design */
@@ -86,89 +86,71 @@
   <body class="overflow-x-hidden overflow-y-auto">
     <!-- Navbar Section -->
     <header
-      class="bg-gray-800 text-white p-4 shadow-md dark:bg-gray-900 sticky top-0 z-50"
-    >
-      <div
-        class="container mx-auto flex justify-between items-center px-4 md:px-0"
+  class="bg-gray-800 text-white p-4 shadow-md dark:bg-gray-900 sticky top-0 z-50"
+>
+  <div
+    class="container mx-auto flex justify-between items-center px-4 md:px-0"
+  >
+    <div class="flex items-center">
+      <img
+        src="./image/Logo.png"
+        alt="AutoFlux Logo"
+        class="h-16 w-16 md:h-20 md:w-20 rounded-full mr-2"
+      />
+      <span class="text-md font-bold">AUTOFLUX</span>
+    </div>
+
+    <nav class="hidden md:flex space-x-6">
+      <a href="./index.html" class="nav-link hover:text-gray-300">Home</a>
+      <a href="./shop.html" class="nav-link hover:text-gray-300">Shop</a>
+      <a href="./about-us.html" class="nav-link hover:text-gray-300"
+        >About Us</a
       >
-        <div class="flex items-center">
-          <img
-            src="./image/Logo.png"
-            alt="AutoFlux Logo"
-            class="h-16 w-16 md:h-20 md:w-20 rounded-full mr-2"
-          />
-          <span class="text-md font-bold">AUTOFLUX</span>
-        </div>
-
-        <nav class="hidden md:flex space-x-6">
-          <a href="./index.html" class="hover:text-gray-300">Home</a>
-          <a href="./shop.html" class="hover:text-gray-300">Shop</a>
-          <a href="./about-us.html" class="hover:text-gray-300">About Us</a>
-          <a href="./contact-us.html" class="hover:text-gray-300">Contact</a>
-        </nav>
-
-        <div class="hidden md:flex items-center space-x-4">
-          <button
-            id="theme-toggle"
-            class="text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-2xl md:text-2xl p-2.5"
-          >
-            <i id="theme-icon" class="fa-solid fa-moon"></i>
-          </button>
-          <a
-            href="./profile.html"
-            class="text-white hover:text-gray-300 cursor-pointer"
-          >
-            <i class="fas fa-user-circle text-2xl md:text-3xl"></i>
-          </a>
-        </div>
-
-        <div class="md:hidden flex items-center space-x-4">
-          <button
-            id="mobile-theme-toggle"
-            class="text-gray-400 focus:outline-none text-2xl"
-          >
-            <i id="mobile-theme-icon" class="fa-solid fa-moon"></i>
-          </button>
-          <button id="mobile-menu-button" class="text-white focus:outline-none">
-            <i class="fas fa-bars text-2xl"></i>
-          </button>
-        </div>
-      </div>
-
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden bg-gray-800 text-white py-4 mt-2 dark:bg-gray-900"
+      <a href="./contact-us.html" class="nav-link hover:text-gray-300"
+        >Contact</a
       >
-        <nav class="flex flex-col items-center space-y-4 px-4">
-          <a
-            href="./index.html"
-            class="hover:text-gray-300 w-full text-center py-2"
-            >Home</a
-          >
-          <a
-            href="./shop.html"
-            class="hover:text-gray-300 w-full text-center py-2"
-            >Shop</a
-          >
-          <a
-            href="./about-us.html"
-            class="hover:text-gray-300 w-full text-center py-2"
-            >About Us</a
-          >
-          <a
-            href="./contact-us.html"
-            class="hover:text-gray-300 w-full text-center py-2"
-            >Contact</a
-          >
-          <a
-            href="./profile.html"
-            class="hover:text-gray-300 w-full text-center py-2"
-          >
-            <i class="fas fa-user-circle text-2xl pt-4"></i> Profile
-          </a>
-        </nav>
-      </div>
-    </header>
+    </nav>
+
+    <div class="hidden md:flex items-center space-x-4">
+      <button
+        id="theme-toggle"
+        class="text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-2xl md:text-2xl p-2.5"
+      >
+        <i id="theme-icon" class="fa-solid fa-moon"></i>
+      </button>
+      <a href="./profile.html" class="text-white hover:text-gray-300 cursor-pointer">
+        <i class="fas fa-user-circle text-2xl md:text-3xl"></i>
+      </a>
+    </div>
+
+    <div class="md:hidden flex items-center space-x-4">
+      <button
+        id="mobile-theme-toggle"
+        class="text-gray-400 focus:outline-none text-2xl"
+      >
+        <i id="mobile-theme-icon" class="fa-solid fa-moon"></i>
+      </button>
+      <button id="mobile-menu-button" class="text-white focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden bg-gray-800 text-white py-4 mt-2 dark:bg-gray-900"
+  >
+    <nav class="flex flex-col items-center space-y-4 px-4">
+      <a href="./index.html" class="nav-link hover:text-gray-300 w-full text-center py-2">Home</a>
+      <a href="./shop.html" class="nav-link hover:text-gray-300 w-full text-center py-2">Shop</a>
+      <a href="./about-us.html" class="nav-link hover:text-gray-300 w-full text-center py-2">About Us</a>
+      <a href="./contact-us.html" class="nav-link hover:text-gray-300 w-full text-center py-2">Contact</a>
+      <a href="./profile.html" class="nav-link hover:text-gray-300 w-full text-center py-2">
+        <i class="fas fa-user-circle text-2xl pt-4"></i> Profile
+      </a>
+    </nav>
+  </div>
+</header>
 
     <!-- Hero Section -->
     <section
@@ -528,7 +510,7 @@
                   >$170,505</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./profile.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -695,7 +677,7 @@
                   >$76,000</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card2.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -862,7 +844,7 @@
                   >$52,795</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card3.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -1029,7 +1011,7 @@
                   >$74,900</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card4.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -1196,7 +1178,7 @@
                   >$32,515</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card5.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -1363,7 +1345,7 @@
                   >$57,415</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card6.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -1530,7 +1512,7 @@
                   >$74,900</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card7.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -1697,7 +1679,7 @@
                   >$51,295</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card8.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -1864,7 +1846,7 @@
                   >$42,290</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card9.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -2031,7 +2013,7 @@
                   >$80,875</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card10.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -2198,7 +2180,7 @@
                   >$125,325</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card11.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -2365,7 +2347,7 @@
                   >$56,310</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card12.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -2532,7 +2514,7 @@
                   >$127,895</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card13.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -2699,7 +2681,7 @@
                   >$126,000</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card14.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -2866,7 +2848,7 @@
                   $81,200</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card15.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -3033,7 +3015,7 @@
                   >$197,050</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card16.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -3213,7 +3195,7 @@
                   >$162,650</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card17.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -3380,7 +3362,7 @@
                   >$150,975</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card18.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -3547,7 +3529,7 @@
                   >$111,950</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card19.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -3714,7 +3696,7 @@
                   >$2.7M</span
                 >
                 <a
-                  href="./detail-BMW.html"
+                  href="./card20.html"
                   class="flex w-fit bg-pink-500 text-white font-semibold rounded-full px-3 py-2 items-center space-x-2 transition duration-200 ease-in-out hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75"
                 >
                   <span>Buy now</span>
@@ -3745,7 +3727,7 @@
           </h2>
           <p class="text-xl md:text-2xl font-semibold">+885 81 528 714</p>
           <a
-            href="/booking"
+            href="./contact-us.html"
             class="bg-pink-600 inline-block py-2 px-4 rounded text-white font-semibold mt-4"
             >Book now</a
           >
@@ -3987,6 +3969,29 @@
         scrollToSlide(0); // Ensure it starts at the first slide
         startAutoScroll(); // Begin auto-scrolling
       });
+
+      document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link'); // Select all navigation links
+
+    // Get the current page's filename (e.g., "index.html", "shop.html")
+    const currentPage = window.location.pathname.split('/').pop();
+
+    navLinks.forEach(link => {
+        // Remove active styles from all links first to ensure only one is highlighted
+        link.classList.remove('text-pink-500', 'font-semibold', 'underline');
+
+        // Extract the filename from the link's href attribute
+        const linkHref = link.getAttribute('href').split('/').pop();
+
+        // Check if the link's href matches the current page
+        // Special handling for index.html if the URL is just '/'
+        if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+            // Apply Tailwind classes for the active state
+            // You can change 'text-pink-500', 'font-semibold', 'underline' to any colors/styles you prefer
+            link.classList.add('text-pink-500', 'font-semibold', 'underline');
+        }
+    });
+});
     </script>
   </body>
 </html>

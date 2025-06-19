@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoFlux</title>
+    <link rel="shortcut icon" href="./image/Logo.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .container-shadow {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+      .buy-now-btn {
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        text-align: center;
+        transition: background-color 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden overflow-y-auto dark:bg-gray-700">
+    <header
+      class="bg-gray-800 text-white p-4 shadow-md dark:bg-gray-900 sticky top-0 z-50"
+    >
+      <div
+        class="container mx-auto flex justify-between items-center px-4 md:px-0"
+      >
+        <div class="flex items-center">
+          <img
+            src="./image/Logo.png"
+            alt="AutoFlux Logo"
+            class="h-16 w-16 md:h-20 md:w-20 rounded-full mr-2"
+          />
+          <span class="text-md font-bold">AUTOFLUX</span>
+        </div>
+
+        <nav class="hidden md:flex space-x-6">
+          <a href="./index.html" class="nav-link hover:text-gray-300">Home</a>
+          <a href="./shop.html" class="nav-link hover:text-gray-300">Shop</a>
+          <a href="./about-us.html" class="nav-link hover:text-gray-300"
+            >About Us</a
+          >
+          <a href="./contact-us.html" class="nav-link hover:text-gray-300"
+            >Contact</a
+          >
+        </nav>
+
+        <div class="hidden md:flex items-center space-x-4">
+          <button
+            id="theme-toggle"
+            class="text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-2xl md:text-2xl p-2.5"
+          >
+            <i id="theme-icon" class="fa-solid fa-moon"></i>
+          </button>
+          <a
+            href="./profile.html"
+            class="text-white hover:text-gray-300 cursor-pointer"
+          >
+            <i class="fas fa-user-circle text-2xl md:text-3xl"></i>
+          </a>
+        </div>
+
+        <div class="md:hidden flex items-center space-x-4">
+          <button
+            id="mobile-theme-toggle"
+            class="text-gray-400 focus:outline-none text-2xl"
+          >
+            <i id="mobile-theme-icon" class="fa-solid fa-moon"></i>
+          </button>
+          <button id="mobile-menu-button" class="text-white focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-gray-800 text-white py-4 mt-2 dark:bg-gray-900"
+      >
+        <nav class="flex flex-col items-center space-y-4 px-4">
+          <a
+            href="./index.html"
+            class="nav-link hover:text-gray-300 w-full text-center py-2"
+            >Home</a
+          >
+          <a
+            href="./shop.html"
+            class="nav-link hover:text-gray-300 w-full text-center py-2"
+            >Shop</a
+          >
+          <a
+            href="./about-us.html"
+            class="nav-link hover:text-gray-300 w-full text-center py-2"
+            >About Us</a
+          >
+          <a
+            href="./contact-us.html"
+            class="nav-link hover:text-gray-300 w-full text-center py-2"
+            >Contact</a
+          >
+          <a
+            href="./profile.html"
+            class="nav-link hover:text-gray-300 w-full text-center py-2"
+          >
+            <i class="fas fa-user-circle text-2xl pt-4"></i> Profile
+          </a>
+        </nav>
+      </div>
+    </header>
+    
+    <div
+      class="max-w-6xl mx-auto bg-white rounded-lg container-shadow p-8 md:p-12 dark:bg-gray-800"
+    >
+      <!-- Header Section -->
+       <div class="mb-6">
+          <button class="px-6 py-2 rounded-full bg-pink-700 text-white hover:bg-pink-800 transition duration-300 dark:bg-pink-600 dark:hover:bg-pink-700" ><i class="fas fa-arrow-left mr-2"></i><a href="./shop.html">Back</a></button>
+        </div>
+      <div class="text-center mb-10">
+        <p class="text-sm text-gray-500 uppercase tracking-widest mb-2 dark:text-white">
+          Find Your Car By Car Brand
+        </p>
+        <h1 class="text-4xl font-bold text-gray-800 dark:text-white">Best Selling Cars</h1>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-4">
+        <div
+          class="relative w-full lg:w-2/3 bg-gray-100 rounded-lg overflow-hidden p-6 flex items-center justify-center dark:bg-gray-700"
+        >
+          <img
+            src="./image/image-Mercedes/black.png"
+            alt="BMW i8"
+            class="max-w-full h-auto rounded-lg"
+          />
+          <div
+            class="absolute top-4 right-4 bg-pink-500 text-white rounded-full p-4 flex flex-col items-center justify-center text-center text-sm font-bold w-24 h-24 shadow-lg"
+          >
+            <span>10%</span>
+            <span>OFF</span>
+          </div>
+        </div>
+
+        <div class="w-full lg:w-1/3 bg-white rounded-lg p-6 md:p-8 dark:bg-gray-700">
+          <p class="text-sm text-gray-500 font-semibold mb-2 dark:text-white">NEW ARRIVAL</p>
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 dark:text-white">
+            This is the new 2025 Mercedes-Benz...
+          </h2>
+          <p class="text-gray-600 leading-relaxed mb-6 dark:text-white">
+            For 15 years we raising the standard of used car re with one of the
+            most innovative and reliable used ve programmes ever created. A
+            comprehensive
+          </p>
+
+          <div class="flex items-baseline mb-6">
+            <span class="text-4xl font-bold text-gray-800 mr-2 dark:text-white">$17,050.5</span>
+            <span class="text-lg text-gray-500 line-through dark:text-pink-500">$17,0505</span>
+          </div>
+
+          <!-- Car Specs Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
+            <div class="flex items-center space-x-2 text-gray-700">
+              <!-- Fuel Type Icon -->
+              <svg
+                class="w-6 h-6 text-gray-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6m0 0a2 2 0 002 2h2a2 2 0 002-2m0 0h12a2 2 0 002-2v-6a2 2 0 00-2-2H9m0 0V9a2 2 0 012-2h2a2 2 0 012 2v3m0 0V9a2 2 0 00-2-2h-2m2 5a2 2 0 002 2h2a2 2 0 002-2"
+                ></path>
+              </svg>
+              <span>Petrol</span>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-700">
+              <!-- Mileage Icon -->
+              <svg
+                class="w-6 h-6 text-gray-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 4m0 3V4m0 3h-6"
+                ></path>
+              </svg>
+              <span>90k.m</span>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-700">
+              <!-- Transmission Icon -->
+              <svg
+                class="w-6 h-6 text-gray-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.375 2.572-1.065z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
+              </svg>
+              <span>Auto</span>
+            </div>
+          </div>
+
+          <!-- Buy Now Button -->
+          <button class="buy-now-btn w-full bg-pink-600 hover:bg-pink-700">
+            <a href="./contact-us.html">Buy Now</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-gray-800 text-white py-12 dark:bg-gray-950">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="text-center md:text-left">
+          <div
+            class="flex flex-col items-center justify-center sm:flex-row sm:justify-start md:flex-col lg:flex-row lg:justify-start mb-4"
+          >
+            <img
+              src="./image/Logo.png"
+              alt="AutoFlux Logo"
+              class="h-36 w-36 rounded-full mb-2 sm:mb-0 sm:mr-2 md:mb-2 md:mr-0 lg:mr-2 lg:mb-0"
+            />
+            <span class="text-md font-bold">AUTOFLUX</span>
+          </div>
+          <p class="text-gray-400 text-sm break-words">
+            Your premier destination for buying and selling cars online.
+            Connecting you with your dream car.
+          </p>
+        </div>
+
+        <div class="text-center md:text-left">
+          <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li>
+              <a href="./index.html" class="hover:text-gray-300">Home</a>
+            </li>
+            <li><a href="./shop.html" class="hover:text-gray-300">Shop</a></li>
+            <li>
+              <a href="./about-us.html" class="hover:text-gray-300">About</a>
+            </li>
+            <li>
+              <a href="./contact-us.html" class="hover:text-gray-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center md:text-left">
+          <h4 class="font-semibold text-lg text-white mb-4">Our Brand</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li>
+              <a href="./detail-BMW.html" class="hover:text-gray-300">BMW M</a>
+            </li>
+            <li>
+              <a href="./detail-Jeep.html" class="hover:text-gray-300">Jeep</a>
+            </li>
+            <li>
+              <a href="./detail-Mezerdes.html" class="hover:text-gray-300"
+                >Mercedes-AMG</a
+              >
+            </li>
+            <li>
+              <a href="./detail-Ford.html" class="hover:text-gray-300">Ford</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center md:text-left">
+          <h4 class="font-semibold text-lg text-white mb-4">Contact Us</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><i class="fas fa-envelope mr-1"></i>AutoFlux@gmail.com</li>
+            <li><i class="fas fa-phone mr-1"></i> +855 81 528 714</li>
+            <li>
+              <i class="fas fa-map-marker-alt mr-1"></i>#24, St.562,Sangkat
+              Boeng kak I, Khan Toul Kork, Phonm Penh
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm"
+      >
+        Copyright 2015 All Right Reserved. Made in Logger.
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // DOM element references
+      const body = document.body;
+      const themeBtn = document.getElementById("theme-toggle");
+      const mobileThemeBtn = document.getElementById("mobile-theme-toggle");
+      const themeIcon = document.getElementById("theme-icon");
+      const mobileThemeIcon = document.getElementById("mobile-theme-icon");
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      // Determine initial theme based on localStorage or system preference
+      let isDark =
+        localStorage.getItem("theme") === "dark" ||
+        (!localStorage.getItem("theme") &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches);
+
+      /**
+       * Sets the theme of the page (dark or light).
+       * @param {boolean} dark - True for dark mode, false for light mode.
+       */
+      function setTheme(dark) {
+        if (dark) {
+          body.classList.add("dark");
+          themeIcon.classList.replace("fa-moon", "fa-sun"); // Change icon to sun for dark mode
+          mobileThemeIcon.classList.replace("fa-moon", "fa-sun"); // Change icon for mobile
+          localStorage.setItem("theme", "dark"); // Store preference in local storage
+        } else {
+          body.classList.remove("dark");
+          themeIcon.classList.replace("fa-sun", "fa-moon"); // Change icon to moon for light mode
+          mobileThemeIcon.classList.replace("fa-sun", "fa-moon"); // Change icon for mobile
+          localStorage.setItem("theme", "light"); // Store preference in local storage
+        }
+      }
+
+      /**
+       * Toggles the current theme between dark and light.
+       */
+      function toggleTheme() {
+        const darkMode = !body.classList.contains("dark"); // Check current theme
+        setTheme(darkMode); // Apply the new theme
+      }
+
+      // Apply the initial theme when the page loads
+      setTheme(isDark);
+      AOS.init({
+        duration: 1500, // global duration for animations
+        once: true, // whether animation should happen only once - default
+        mirror: false, // whether elements should animate out while scrolling past them
+      });
+      // Event listeners for theme toggles
+      themeBtn.addEventListener("click", toggleTheme);
+      mobileThemeBtn.addEventListener("click", toggleTheme);
+
+      // Event listener for mobile menu button
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden"); // Toggle visibility of mobile menu
+      });
+
+      // Intersection Observer for fade-in animations on scroll
+      const fadeInSections = document.querySelectorAll(".fade-in-section");
+
+      const observerOptions = {
+        root: null, // Observe changes in the viewport
+        rootMargin: "0px", // No margin around the root
+        threshold: 0.1, // Trigger when 10% of the element is visible
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible"); // Add class to trigger animation
+            observer.unobserve(entry.target); // Stop observing once visible
+          }
+        });
+      }, observerOptions);
+
+      // Observe all fade-in sections
+      fadeInSections.forEach((section) => {
+        observer.observe(section);
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const navLinks = document.querySelectorAll(".nav-link"); // Select all navigation links
+
+        // Get the current page's filename (e.g., "index.html", "contact-us.html")
+        const currentPage = window.location.pathname.split("/").pop();
+
+        navLinks.forEach((link) => {
+          // Remove active styles from all links first to ensure only one is highlighted
+          link.classList.remove("text-pink-500", "font-semibold", "underline");
+
+          // Extract the filename from the link's href attribute
+          const linkHref = link.getAttribute("href").split("/").pop();
+
+          // Check if the link's href matches the current page
+          // Special handling for index.html if the URL is just '/'
+          if (
+            linkHref === currentPage ||
+            (currentPage === "" && linkHref === "index.html")
+          ) {
+            // Apply Tailwind classes for the active state
+            // You can change 'text-pink-500', 'font-semibold', 'underline' to any colors/styles you prefer
+            link.classList.add("text-pink-500", "font-semibold", "underline");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

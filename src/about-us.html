@@ -23,87 +23,50 @@
   </head>
   <body class="overflow-x-hidden overflow-y-auto dark:bg-gray-900">
     <header class="bg-gray-800 text-white p-4 shadow-md dark:bg-gray-900 sticky top-0 z-50">
-      <div
-        class="container mx-auto flex justify-between items-center px-4 md:px-0"
-      >
+    <div class="container mx-auto flex justify-between items-center px-4 md:px-0">
         <div class="flex items-center">
-          <img
-            src="./image/Logo.png"
-            alt="AutoFlux Logo"
-            class="h-16 w-16 md:h-20 md:w-20 rounded-full mr-2"
-          />
-          <span class="text-md font-bold">AUTOFLUX</span>
+            <img src="./image/Logo.png" alt="AutoFlux Logo" class="h-16 w-16 md:h-20 md:w-20 rounded-full mr-2" />
+            <span class="text-md font-bold">AUTOFLUX</span>
         </div>
 
         <nav class="hidden md:flex space-x-6">
-          <a href="./index.html" class="hover:text-gray-300">Home</a>
-          <a href="./shop.html" class="hover:text-gray-300">Shop</a>
-          <a href="./about-us.html" class="hover:text-gray-300">About Us</a>
-          <a href="./contact-us.html" class="hover:text-gray-300">Contact</a>
+            <a href="./index.html" class="nav-link hover:text-gray-300">Home</a>
+            <a href="./shop.html" class="nav-link hover:text-gray-300">Shop</a>
+            <a href="./about-us.html" class="nav-link hover:text-gray-300">About Us</a>
+            <a href="./contact-us.html" class="nav-link hover:text-gray-300">Contact</a>
         </nav>
 
         <div class="hidden md:flex items-center space-x-4">
-          <button
-            id="theme-toggle"
-            class="text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-2xl md:text-2xl p-2.5"
-          >
-            <i id="theme-icon" class="fa-solid fa-moon"></i>
-          </button>
-          <a
-            href="./profile.html"
-            class="text-white hover:text-gray-300 cursor-pointer"
-          >
-            <i class="fas fa-user-circle text-2xl md:text-3xl"></i>
-          </a>
+            <button id="theme-toggle" class="text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-2xl md:text-2xl p-2.5">
+                <i id="theme-icon" class="fa-solid fa-moon"></i>
+            </button>
+            <a href="./profile.html" class="text-white hover:text-gray-300 cursor-pointer">
+                <i class="fas fa-user-circle text-2xl md:text-3xl"></i>
+            </a>
         </div>
 
         <div class="md:hidden flex items-center space-x-4">
-          <button
-            id="mobile-theme-toggle"
-            class="text-gray-400 focus:outline-none text-2xl"
-          >
-            <i id="mobile-theme-icon" class="fa-solid fa-moon"></i>
-          </button>
-          <button id="mobile-menu-button" class="text-white focus:outline-none">
-            <i class="fas fa-bars text-2xl"></i>
-          </button>
+            <button id="mobile-theme-toggle" class="text-gray-400 focus:outline-none text-2xl">
+                <i id="mobile-theme-icon" class="fa-solid fa-moon"></i>
+            </button>
+            <button id="mobile-menu-button" class="text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
         </div>
-      </div>
+    </div>
 
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden bg-gray-800 text-white py-4 mt-2 dark:bg-gray-900"
-      >
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white py-4 mt-2 dark:bg-gray-900">
         <nav class="flex flex-col items-center space-y-4 px-4">
-          <a
-            href="./index.html"
-            class="hover:text-gray-300 w-full text-center py-2"
-            >Home</a
-          >
-          <a
-            href="./shop.html"
-            class="hover:text-gray-300 w-full text-center py-2"
-            >Shop</a
-          >
-          <a
-            href="./about-us.html"
-            class="hover:text-gray-300 w-full text-center py-2"
-            >About Us</a
-          >
-          <a
-            href="./contact-us.html"
-            class="hover:text-gray-300 w-full text-center py-2"
-            >Contact</a
-          >
-          <a
-            href="./profile.html"
-            class="hover:text-gray-300 w-full text-center py-2"
-          >
-            <i class="fas fa-user-circle text-2xl pt-4"></i> Profile
-          </a>
+            <a href="./index.html" class="nav-link hover:text-gray-300 w-full text-center py-2">Home</a>
+            <a href="./shop.html" class="nav-link hover:text-gray-300 w-full text-center py-2">Shop</a>
+            <a href="./about-us.html" class="nav-link hover:text-gray-300 w-full text-center py-2">About Us</a>
+            <a href="./contact-us.html" class="nav-link hover:text-gray-300 w-full text-center py-2">Contact</a>
+            <a href="./profile.html" class="nav-link hover:text-gray-300 w-full text-center py-2">
+                <i class="fas fa-user-circle text-2xl pt-4"></i> Profile
+            </a>
         </nav>
-      </div>
-    </header>
+    </div>
+</header>
     <section
       class="container mx-auto px-4 py-16 dark:bg-gray-800 rounded-xl m-[10px]"
     >
@@ -559,6 +522,28 @@
       );
 
       fadeInSections.forEach((section) => observer.observe(section));
+      document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link'); // Select all navigation links
+
+    // Get the current page's filename (e.g., "index.html", "about-us.html")
+    const currentPage = window.location.pathname.split('/').pop();
+
+    navLinks.forEach(link => {
+        // Remove active styles from all links first to ensure only one is highlighted
+        link.classList.remove('text-pink-500', 'font-semibold', 'underline');
+
+        // Extract the filename from the link's href attribute
+        const linkHref = link.getAttribute('href').split('/').pop();
+
+        // Check if the link's href matches the current page
+        // Special handling for index.html if the URL is just '/'
+        if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+            // Apply Tailwind classes for the active state
+            // You can change 'text-pink-500', 'font-semibold', 'underline' to any colors/styles you prefer
+            link.classList.add('text-pink-500', 'font-semibold', 'underline');
+        }
+    });
+});
     </script>
   </body>
 </html>
