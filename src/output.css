@@ -877,9 +877,6 @@
   .bg-blue-100 {
     background-color: var(--color-blue-100);
   }
-  .bg-blue-500 {
-    background-color: var(--color-blue-500);
-  }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
@@ -928,11 +925,11 @@
   .bg-pink-600 {
     background-color: var(--color-pink-600);
   }
+  .bg-pink-700 {
+    background-color: var(--color-pink-700);
+  }
   .bg-purple-100 {
     background-color: var(--color-purple-100);
-  }
-  .bg-purple-500 {
-    background-color: var(--color-purple-500);
   }
   .bg-purple-700 {
     background-color: var(--color-purple-700);
@@ -2002,11 +1999,6 @@
       background-color: var(--color-blue-500);
     }
   }
-  .dark\:bg-blue-700 {
-    &:where(.dark, .dark *) {
-      background-color: var(--color-blue-700);
-    }
-  }
   .dark\:bg-blue-800 {
     &:where(.dark, .dark *) {
       background-color: var(--color-blue-800);
@@ -2189,15 +2181,6 @@
     &:where(.dark, .dark *) {
       &::placeholder {
         color: var(--color-gray-500);
-      }
-    }
-  }
-  .dark\:hover\:bg-blue-800 {
-    &:where(.dark, .dark *) {
-      &:hover {
-        @media (hover: hover) {
-          background-color: var(--color-blue-800);
-        }
       }
     }
   }
